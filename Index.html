@@ -11,7 +11,19 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-      <link rel="shortcut icon" type="image/jpg" href="favicon.png"><link rel="stylesheet" type="text/css" href="style.css"><link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script><script type="text/javascript">emailjs.init("JmWFn7DJzgs_MOJog")</script>
+      <link rel="shortcut icon" type="image/jpg" href="favicon.png"><link rel="stylesheet" type="text/css" href="styles.css"><link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"><script type="text/javascript" src="https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script><script type="text/javascript">emailjs.init("JmWFn7DJzgs_MOJog")</script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/twemoji.min.css">
+      <!-- Include Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Add this to load Font Awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+ZsaBr6P9lJZrF1H6vhtPiFQ" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/twemoji.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<script>
+  // This will parse and render emojis using Twemoji
+  twemoji.parse(document.body);
+</script>
+
     <title>The English Nest &nbsp &nbsp-Nest Your Future with Us</title>
     <style>
         @import url(https://fonts.googleapis.com/css2?family=Nunito&display=swap);
@@ -394,10 +406,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('university.jpg'); /* Replace with your image path */
+    background-image: url('https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/university-1.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    z-index: 1; /* Set lower z-index */
+/*    z-index: 1; /* Set lower z-index */*/
 }
 
 .abt-overlay {
@@ -406,8 +418,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-background-color: rgba(0, 0, 8, 0.75); /* Navy blue with 70% opacity */
-    backdrop-filter: blur(4px); /* Apply blur effect */
+/*background-color: rgba(0, 0, 8, 0.75); /* Navy blue with 70% opacity */
+    backdrop-filter: blur(4px); /* Apply blur effect */*/
     z-index: 2; /* Set higher than background but lower than text */
 }
 
@@ -475,7 +487,7 @@ background-color: rgba(0, 0, 8, 0.75); /* Navy blue with 70% opacity */
 
 .box {
     border: 3px solid var(--sky-blue);
-    width: 26%;               /* Each box takes 30% of the row width */
+    width: 25%;               /* Each box takes 30% of the row width */
     height: 180px;            /* Set the height for each box */
     background-color: var(--navy);   /* Sample color for each box */
     border-radius: 20px;
@@ -503,7 +515,7 @@ background-color: rgba(0, 0, 8, 0.75); /* Navy blue with 70% opacity */
 
 /* Service Card */
     .box {
-      padding: 20px;
+      padding: 0px;
       text-align: center;
       position: relative;
       display: flex;
@@ -543,12 +555,17 @@ background-color: rgba(0, 0, 8, 0.75); /* Navy blue with 70% opacity */
       display: inline-block;
       margin-top: 10px;
       width: 30%;
-      padding: 8px 15px;
-      background: var(--blue);
+/*      padding: 8px 15px;*/
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 13px;
+padding-right: 13px;
+/*      background: var(--sky-blue);*/
+background-color: #007bff;
       color: var(--navy);
       font-weight: bold;
       border-radius: 20px;
-      border: 2px solid var(--sky-blue);
+      border: 2px solid #007bff;
       text-decoration: none;
       font-size: 15px;
       cursor: pointer;
@@ -656,6 +673,7 @@ color: var(--sky-blue);
 .popupone h4{
   color: var(--sky-blue);
   font-size: 20px;
+  margin-bottom: 7px;
   padding-left: 20px;
 }
 
@@ -668,17 +686,39 @@ color: var(--sky-blue);
     color: var(--sky-blue);
     background-color: var(--navy);
 /*    border: 2px solid var(--sky-blue);*/
-    padding: 5px;
+/*    padding: 5px;*/
     border-radius: 10px;
     text-align: center;
-    margin-top: 10px;
-    transform: translateX(300px);;
-    font-size: 30px;
+/*    margin-top: 10px;*/
+/*    transform: translateX(300px);;*/
+    font-size: 20px;
     cursor: pointer;
 }
+.academic button{
+   position: absolute;         /* Enables positioning relative to the nearest positioned ancestor */
+    bottom: 0;                  /* Places the button at the bottom of the container */
+    right: 0;                   /* Places the button on the right side of the container */
+    
+    /* Other styling properties */
+    cursor: pointer;
+    background-color: var(--navy);
+    color: var(--sky-blue);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid var(--sky-blue);
+    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;           /* Adjust as needed, but margin-top may not have much effect here */
+    margin-bottom: 10px;        /* Adjust as needed */
+    margin-right: 10px;
+}
 
-
-
+.academic .i{
+    text-decoration: none;
+}
 
 
 
@@ -727,13 +767,34 @@ display: none;
     color: var(--sky-blue);
     background-color: var(--navy);
 /*    border: 2px solid var(--sky-blue);*/
-    padding-top: 90px;
+/*    padding: 5px;*/
     border-radius: 10px;
     text-align: center;
-/*    margin-top: 20px;*/
-    transform: translateX(600px);;
-    font-size: 30px;
+/*    margin-top: 10px;*/
+/*    transform: translateX(300px);;*/
+    font-size: 20px;
     cursor: pointer;
+}
+.pte button{
+  position: absolute;         /* Enables positioning relative to the nearest positioned ancestor */
+    bottom: 0;                  /* Places the button at the bottom of the container */
+    right: 0;                   /* Places the button on the right side of the container */
+    
+    /* Other styling properties */
+    cursor: pointer;
+    background-color: var(--navy);
+    color: var(--sky-blue);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid var(--sky-blue);
+    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;           /* Adjust as needed, but margin-top may not have much effect here */
+    margin-bottom: 10px;        /* Adjust as needed */
+    margin-right: 10px;
 }
 
 
@@ -784,13 +845,34 @@ display: none;
     color: var(--sky-blue);
     background-color: var(--navy);
 /*    border: 2px solid var(--sky-blue);*/
-    padding-top: 90px;
+/*    padding: 5px;*/
     border-radius: 10px;
     text-align: center;
-/*    margin-top: 20px;*/
-    transform: translateX(600px);;
-    font-size: 30px;
+/*    margin-top: 10px;*/
+/*    transform: translateX(300px);;*/
+    font-size: 20px;
     cursor: pointer;
+}
+.toefl button{
+   position: absolute;         /* Enables positioning relative to the nearest positioned ancestor */
+    bottom: 0;                  /* Places the button at the bottom of the container */
+    right: 0;                   /* Places the button on the right side of the container */
+    
+    /* Other styling properties */
+    cursor: pointer;
+    background-color: var(--navy);
+    color: var(--sky-blue);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid var(--sky-blue);
+    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;           /* Adjust as needed, but margin-top may not have much effect here */
+    margin-bottom: 10px;        /* Adjust as needed */
+    margin-right: 10px;
 }
 
 
@@ -841,15 +923,35 @@ display: none;
     color: var(--sky-blue);
     background-color: var(--navy);
 /*    border: 2px solid var(--sky-blue);*/
-    padding-top: 90px;
+/*    padding: 5px;*/
     border-radius: 10px;
     text-align: center;
-/*    margin-top: 20px;*/
-    transform: translateX(600px);;
-    font-size: 30px;
+/*    margin-top: 10px;*/
+/*    transform: translateX(300px);;*/
+    font-size: 20px;
     cursor: pointer;
 }
-
+.business button{
+   position: absolute;         /* Enables positioning relative to the nearest positioned ancestor */
+    bottom: 0;                  /* Places the button at the bottom of the container */
+    right: 0;                   /* Places the button on the right side of the container */
+    
+    /* Other styling properties */
+    cursor: pointer;
+    background-color: var(--navy);
+    color: var(--sky-blue);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid var(--sky-blue);
+    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;           /* Adjust as needed, but margin-top may not have much effect here */
+    margin-bottom: 10px;        /* Adjust as needed */
+    margin-right: 10px;
+}
 
 
 
@@ -901,13 +1003,34 @@ display: none;
     color: var(--sky-blue);
     background-color: var(--navy);
 /*    border: 2px solid var(--sky-blue);*/
-    padding-top: 90px;
+/*    padding: 5px;*/
     border-radius: 10px;
     text-align: center;
-/*    margin-top: 20px;*/
-    transform: translateX(600px);;
-    font-size: 30px;
+/*    margin-top: 10px;*/
+/*    transform: translateX(300px);;*/
+    font-size: 20px;
     cursor: pointer;
+}
+.spoken button{
+     position: absolute;         /* Enables positioning relative to the nearest positioned ancestor */
+    bottom: 0;                  /* Places the button at the bottom of the container */
+    right: 0;                   /* Places the button on the right side of the container */
+    
+    /* Other styling properties */
+    cursor: pointer;
+    background-color: var(--navy);
+    color: var(--sky-blue);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid var(--sky-blue);
+    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;           /* Adjust as needed, but margin-top may not have much effect here */
+    margin-bottom: 10px;        /* Adjust as needed */
+    margin-right: 10px;
 }
 
 
@@ -959,13 +1082,34 @@ display: none;
     color: var(--sky-blue);
     background-color: var(--navy);
 /*    border: 2px solid var(--sky-blue);*/
-    padding-top: 90px;
+/*    padding: 5px;*/
     border-radius: 10px;
     text-align: center;
-/*    margin-top: 20px;*/
-    transform: translateX(600px);;
-    font-size: 30px;
+/*    margin-top: 10px;*/
+/*    transform: translateX(300px);;*/
+    font-size: 20px;
     cursor: pointer;
+}
+.oxford button{
+      position: absolute;         /* Enables positioning relative to the nearest positioned ancestor */
+    bottom: 0;                  /* Places the button at the bottom of the container */
+    right: 0;                   /* Places the button on the right side of the container */
+    
+    /* Other styling properties */
+    cursor: pointer;
+    background-color: var(--navy);
+    color: var(--sky-blue);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid var(--sky-blue);
+    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;           /* Adjust as needed, but margin-top may not have much effect here */
+    margin-bottom: 10px;        /* Adjust as needed */
+    margin-right: 10px;
 }
 
 
@@ -978,7 +1122,7 @@ display: none;
       position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 600%);
+    transform: translate(-50%, 560%);
     z-index: 1000;
     border-radius: 20px;
 display: none;
@@ -1016,13 +1160,1071 @@ display: none;
     color: var(--sky-blue);
     background-color: var(--navy);
 /*    border: 2px solid var(--sky-blue);*/
-    padding-top: 90px;
+/*    padding: 5px;*/
     border-radius: 10px;
     text-align: center;
-/*    margin-top: 20px;*/
-    transform: translateX(600px);;
-    font-size: 30px;
+/*    margin-top: 10px;*/
+/*    transform: translateX(300px);;*/
+    font-size: 20px;
     cursor: pointer;
+}
+.spouse button{
+ position: absolute;         /* Enables positioning relative to the nearest positioned ancestor */
+    bottom: 0;                  /* Places the button at the bottom of the container */
+    right: 0;                   /* Places the button on the right side of the container */
+    
+    /* Other styling properties */
+    cursor: pointer;
+    background-color: var(--navy);
+    color: var(--sky-blue);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid var(--sky-blue);
+    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;           /* Adjust as needed, but margin-top may not have much effect here */
+    margin-bottom: 10px;        /* Adjust as needed */
+    margin-right: 10px;
+
+}
+
+
+#testimonial{
+height: 75vh;
+width: 100%;
+}
+.testimonial-heading h1{
+    color: yellow;
+    font-size: 50px;
+    text-align: center;
+}
+.testimonial-heading{
+    margin-bottom: 150px;
+}
+
+
+/* Container styling */
+/* Container styling */
+.testimonial-section {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--navy);
+}
+
+/* Testimonial Box styling */
+.testimonial-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+    background-color: var(--navy);
+    border-radius: 30px;
+/*    box-shadow: 0px 4px 8px var(--sky-blue);*/
+border: 3px solid var(--sky-blue);
+    text-align: center;
+}
+
+/* Image styling */
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 3px solid var(--blue);
+    margin-bottom: 15px;
+}
+
+/* Name, Text, and Rating styling */
+.testimonial-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: yellow;
+    margin: 0;
+}
+
+.testimonial-text {
+    font-size: 1em;
+    color: var(--white);
+    margin: 10px 0;
+}
+
+.testimonial-rating {
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+
+
+
+  /* Styling for Input Groups with Icons */
+  .input-group {
+    position: relative;
+    display: flex;
+    background-color: var(--navy);
+    align-items: center;
+    width: 80%;
+  }
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    font-size: 1.2rem;
+    color: var(--sky-blue);
+  }
+.contact-input {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border: 3px solid var(--sky-blue);
+  border-radius: 25px;
+  font-size: 18px;
+  color: var(--sky-blue);
+  transition: border-color 0.3s;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: var(--sky-blue); /* Keep the border color unchanged */
+  box-shadow: none; /* Remove any box shadow on focus */
+}
+
+  #contact-submit:hover {
+    background-color: var(--sky-blue);
+  }
+input{
+    background-color: var(--navy);
+    border-radius: 20px;
+    border: 3px solid var(--sky-blue);
+}
+  /* Responsive adjustments */
+  
+
+
+
+
+
+#footer-bar {
+/*  width: 85%;
+  height: 30px;
+  background-color: var(--navy);
+  border: 3px solid var(--sky-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+*/
+   width: 85%;
+  height: 50px;
+  background-color: var(--navy);
+  border: 3px solid var(--sky-blue);
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 50px; /* Adds 50px space below the section */
+}
+
+.footer-left {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--sky-blue);
+}
+
+.footer-right{
+  font-size: 15px;
+  padding-top: 0;
+  color: var(--sky-blue);
+  text-decoration: none;
+}
+a{
+    color: var(--sky-blue);
+    text-decoration: none;
+}
+
+
+
+
+/*=======================================================================================================================*/
+
+
+
+
+
+
+
+/*=============== Laptop =============*/
+  @media (min-width: 1024px) and (max-width: 1440px) {
+/* Hide all elements with specific classes */
+.navbar-mobile, .logo-mobile, .nav-links-mobile, .hamburger-mobile, .mobile-menu-mobile, .close-btn-mobile, .hiimg, .iconone {
+  display: none;
+}
+
+/* Hide all elements with specific IDs */
+#nav-links-mobile, #hamburger-mobile, #mobile-menu-mobile, #close-btn-mobile, #home-mobile, #about-mobile, #services-mobile, #portfolio-mobile, #contact-mobile {
+  display: none;
+}
+}
+/*============== Tablets ==========*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+/* Hide all elements with specific classes */
+.navbar-mobile, .logo-mobile, .nav-links-mobile, .hamburger-mobile, .mobile-menu-mobile, .close-btn-mobile, .hiimg, .iconone {
+  display: none;
+}
+
+/* Hide all elements with specific IDs */
+#nav-links-mobile, #hamburger-mobile, #mobile-menu-mobile, #close-btn-mobile, #home-mobile, #about-mobile, #services-mobile, #portfolio-mobile, #contact-mobile {
+  display: none;
+}
+}
+
+/*============ PC =========*/
+@media (min-width: 1440px) {
+  /* Hide all elements with specific classes */
+.navbar-mobile, .logo-mobile, .nav-links-mobile, .hamburger-mobile, .mobile-menu-mobile, .close-btn-mobile, .hiimg, .iconone {
+  display: none;
+}
+
+/* Hide all elements with specific IDs */
+#nav-links-mobile, #hamburger-mobile, #mobile-menu-mobile, #close-btn-mobile, #home-mobile, #about-mobile, #services-mobile, #portfolio-mobile, #contact-mobile {
+  display: none;
+}
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+
+
+
+/* Hide images individually by parent and position */
+.top-bar .logo-container img {
+  display: none;
+}
+
+#home .home-content .image-container img {
+  display: none;
+}
+
+#home .home-content .text-container img {
+  display: none;
+}
+
+.about-container .about-image img {
+  display: none;
+}
+
+.abt-txt-box img {
+  display: none;
+}
+
+.popupone .general img {
+  display: none;
+}
+
+.popupone .academic img {
+  display: none;
+}
+
+.popuptwo .pte img {
+  display: none;
+}
+
+.popupthree .toefl img {
+  display: none;
+}
+
+.popupfour .business img {
+  display: none;
+}
+
+.popupfive .spoken img {
+  display: none;
+}
+
+.popupsix .oxford img {
+  display: none;
+}
+
+.popupseven .spouse img {
+  display: none;
+}
+
+#services .boxes .box #box1 .icon img {
+  display: none;
+}
+
+#services .boxes .box #box2 .icon img {
+  display: none;
+}
+
+#services .boxes .box #box3 .icon img {
+  display: none;
+}
+
+#services .boxes .box #box4 .icon img {
+  display: none;
+}
+
+#services .boxes .box #box5 .icon img {
+  display: none;
+}
+
+#services .boxes .box #box6 .icon img {
+  display: none;
+}
+
+#services .boxes .box #box7 .icon img {
+  display: none;
+}
+
+/* Hide individual h1, h2, h3, h4, etc. tags by their specific parent location */
+.top-bar h1 {
+  display: none;
+}
+
+#home .home-content .text-container h2 {
+  display: none;
+}
+
+#home .home-content .text-container h1 {
+  display: none;
+}
+
+#about .first-about h1 {
+  display: none;
+}
+
+#about .first-about h2 {
+  display: none;
+}
+
+#about .about-container .about-text h1 {
+  display: none;
+}
+
+#abt-sec .choose-h h1 {
+  display: none;
+}
+
+#abt-sec .abt-txt-cont .abt-txt-box h3 {
+  display: none;
+}
+
+.popupone .general h1 {
+  display: none;
+}
+
+.popupone .academic h1 {
+  display: none;
+}
+
+.popuptwo .pte h1 {
+  display: none;
+}
+
+.popupthree .toefl h1 {
+  display: none;
+}
+
+.popupfour .business h1 {
+  display: none;
+}
+
+.popupfive .spoken h1 {
+  display: none;
+}
+
+.popupsix .oxford h1 {
+  display: none;
+}
+
+.popupseven .spouse h1 {
+  display: none;
+}
+
+#services .sec-heading h1 {
+  display: none;
+}
+
+#testimonial .testimonial-heading h1 {
+  display: none;
+}
+
+#footer-bar .footer-left h1 {
+  display: none;
+}
+
+#footer-bar .footer-right h1 {
+  display: none;
+}
+
+/* Hide individual <p> tags */
+#home .home-content .text-container p {
+  display: none;
+}
+
+#about .about-container .about-text p {
+  display: none;
+}
+
+#abt-sec .abt-txt-cont .abt-txt-box p {
+  display: none;
+}
+
+.popupone .general p {
+  display: none;
+}
+
+.popupone .academic p {
+  display: none;
+}
+
+.popuptwo .pte p {
+  display: none;
+}
+
+.popupthree .toefl p {
+  display: none;
+}
+
+.popupfour .business p {
+  display: none;
+}
+
+.popupfive .spoken p {
+  display: none;
+}
+
+.popupsix .oxford p {
+  display: none;
+}
+
+.popupseven .spouse p {
+  display: none;
+}
+
+#testimonial .testimonial-section .testimonial-box .testimonial-text {
+  display: none;
+}
+
+/* Hide individual <a> tags (links) */
+.top-bar .nav-links a {
+  display: none;
+}
+
+#home .home-content .text-container .cta-button {
+  display: none;
+}
+
+#about .about-container .about-text .cta-button {
+  display: none;
+}
+
+#abt-sec .abt-txt-cont .abt-txt-box .cta-button {
+  display: none;
+}
+
+#services .boxes .box .cta-button {
+  display: none;
+}
+
+.popupone .general .cta-button {
+  display: none;
+}
+
+.popupone .academic .cta-button {
+  display: none;
+}
+
+.popuptwo .pte .cta-button {
+  display: none;
+}
+
+.popupthree .toefl .cta-button {
+  display: none;
+}
+
+.popupfour .business .cta-button {
+  display: none;
+}
+
+.popupfive .spoken .cta-button {
+  display: none;
+}
+
+.popupsix .oxford .cta-button {
+  display: none;
+}
+
+.popupseven .spouse .cta-button {
+  display: none;
+}
+
+/* Hide all <button> elements individually */
+button {
+  display: none;
+}
+
+#contact-submit {
+  display: none;
+}
+
+#contact-form button {
+  display: none;
+}
+
+/* Hide individual <ul> and <li> by their parent container */
+#home .home-content .text-container ul {
+  display: none;
+}
+
+#about .first-about ul {
+  display: none;
+}
+
+#services .boxes ul {
+  display: none;
+}
+
+#testimonial .testimonial-section ul {
+  display: none;
+}
+
+#footer-bar .footer-left ul {
+  display: none;
+}
+
+#footer-bar .footer-right ul {
+  display: none;
+}
+
+/* Hide specific <li> inside <ul> tags */
+#home .home-content .text-container ul li {
+  display: none;
+}
+
+#about .first-about ul li {
+  display: none;
+}
+
+#services .boxes ul li {
+  display: none;
+}
+
+#testimonial .testimonial-section ul li {
+  display: none;
+}
+
+#footer-bar .footer-left ul li {
+  display: none;
+}
+
+#footer-bar .footer-right ul li {
+  display: none;
+}
+
+/* Hide <div> elements by specific class or ID */
+.top-bar {
+  display: none;
+}
+
+#home .home-content {
+  display: none;
+}
+
+#about .about-container {
+  display: none;
+}
+
+#abt-sec .choose-h {
+  display: none;
+}
+
+#abt-sec .abt-txt-cont .abt-txt-box {
+  display: none;
+}
+
+.popupone .general {
+  display: none;
+}
+
+.popupone .academic {
+  display: none;
+}
+
+.popuptwo .pte {
+  display: none;
+}
+
+.popupthree .toefl {
+  display: none;
+}
+
+.popupfour .business {
+  display: none;
+}
+
+.popupfive .spoken {
+  display: none;
+}
+
+.popupsix .oxford {
+  display: none;
+}
+
+.popupseven .spouse {
+  display: none;
+}
+
+#services .boxes .box #box1 {
+  display: none;
+}
+
+#services .boxes .box #box2 {
+  display: none;
+}
+
+#services .boxes .box #box3 {
+  display: none;
+}
+
+#services .boxes .box #box4 {
+  display: none;
+}
+
+#services .boxes .box #box5 {
+  display: none;
+}
+
+#services .boxes .box #box6 {
+  display: none;
+}
+
+#services .boxes .box #box7 {
+  display: none;
+}
+
+#testimonial .testimonial-section .testimonial-box {
+  display: none;
+}
+
+#footer-bar .footer-left {
+  display: none;
+}
+
+#footer-bar .footer-right {
+  display: none;
+}
+
+/* Hide specific <span>, <strong>, and other inline elements */
+#home .home-content .text-container span {
+  display: none;
+}
+
+#about .first-about span {
+  display: none;
+}
+
+#services .boxes .box span {
+  display: none;
+}
+
+#testimonial .testimonial-section span {
+  display: none;
+}
+
+#footer-bar .footer-left span {
+  display: none;
+}
+
+#footer-bar .footer-right span {
+  display: none;
+}
+
+/* Hide specific <section> elements */
+#home {
+  display: none;
+}
+
+#about {
+  display: none;
+}
+
+#services {
+  display: none;
+}
+
+#testimonial {
+  display: none;
+}
+
+#footer-bar {
+  display: none;
+}
+#contact, .contact-content,
+.contact-info-box,
+.contact-form-box,
+.footer-bar,
+.footer-left,
+.abt-bg, .abt-sec{
+    display: none;
+}
+/* Hide the background image and overlay */
+#abt-sec .abt-bg {
+    display: none;
+}
+
+#abt-sec .abt-bg .abt-overlay {
+    display: none;
+}
+
+/* Hide the 'Why Choose Us' heading */
+#abt-sec .choose-h h1 {
+    display: none;
+}
+
+/* Hide the text container that holds the 3 boxes */
+#abt-sec .abt-txt-cont {
+    display: none;
+}
+
+/* Hide the individual 'abt-txt-box' divs */
+#abt-sec .abt-txt-cont .abt-txt-box {
+    display: none;
+}
+
+/* Hide the images in each abt-txt-box */
+#abt-sec .abt-txt-cont .abt-txt-box img {
+    display: none;
+}
+
+/* Hide the h3 headings within the abt-txt-box */
+#abt-sec .abt-txt-cont .abt-txt-box h3 {
+    display: none;
+}
+
+/* Hide the paragraphs within the abt-txt-box */
+#abt-sec .abt-txt-cont .abt-txt-box p {
+    display: none;
+}
+/* General Popups */
+.popupone, .popuptwo, .popupthree, .popupfour, .popupfive, .popupsix, .popupseven {
+    display: none;
+}
+
+/* For popupone (IELTS General) */
+.popupone .general {
+    display: none;
+}
+
+.popupone .general h1 {
+    display: none;
+}
+
+.popupone .general h3 {
+    display: none;
+}
+
+.popupone .general h2 {
+    display: none;
+}
+
+.popupone .general ul {
+    display: none;
+}
+
+.popupone .general ul li {
+    display: none;
+}
+
+.popupone .general h4 {
+    display: none;
+}
+
+/* For popuptwo (PTE) */
+.popuptwo .pte {
+    display: none;
+}
+
+.popuptwo .pte h1 {
+    display: none;
+}
+
+.popuptwo .pte p {
+    display: none;
+}
+
+.popuptwo .pte h4 {
+    display: none;
+}
+
+/* For popupthree (TOEFL) */
+.popupthree .toefl {
+    display: none;
+}
+
+.popupthree .toefl h1 {
+    display: none;
+}
+
+.popupthree .toefl p {
+    display: none;
+}
+
+.popupthree .toefl h4 {
+    display: none;
+}
+
+/* For popupfour (Business English) */
+.popupfour .business {
+    display: none;
+}
+
+.popupfour .business h1 {
+    display: none;
+}
+
+.popupfour .business p {
+    display: none;
+}
+
+.popupfour .business h4 {
+    display: none;
+}
+
+/* For popupfive (Spoken English) */
+.popupfive .spoken {
+    display: none;
+}
+
+.popupfive .spoken h1 {
+    display: none;
+}
+
+.popupfive .spoken p {
+    display: none;
+}
+
+.popupfive .spoken h4 {
+    display: none;
+}
+
+/* For popupsix (Oxford English Test) */
+.popupsix .oxford {
+    display: none;
+}
+
+.popupsix .oxford h1 {
+    display: none;
+}
+
+.popupsix .oxford p {
+    display: none;
+}
+
+.popupsix .oxford h4 {
+    display: none;
+}
+
+/* For popupseven (Life Skills for Spouse Visa) */
+.popupseven .spouse {
+    display: none;
+}
+
+.popupseven .spouse h1 {
+    display: none;
+}
+
+.popupseven .spouse p {
+    display: none;
+}
+
+.popupseven .spouse h4 {
+    display: none;
+}
+
+/* Services Section (and boxes inside it) */
+#services .sec-heading {
+    display: none;
+}
+
+#services .sec-heading h1 {
+    display: none;
+}
+
+/* Individual Boxes in Services Section */
+#services .boxes .box {
+    display: none;
+}
+
+#services .boxes .box .icon {
+    display: none;
+}
+
+#services .boxes .box h3 {
+    display: none;
+}
+
+#services .boxes .box .cta-button {
+    display: none;
+}
+
+/* Specifically targeting the 'Learn More' links in all the boxes */
+#services .boxes .box a.cta-button {
+    display: none;
+}
+/* Hide the entire testimonial section */
+#testimonial {
+    display: none;
+}
+
+/* Specifically for the testimonial-heading */
+#testimonial .testimonial-heading {
+    display: none;
+}
+
+#testimonial .testimonial-heading h1 {
+    display: none;
+}
+
+/* Specifically for the testimonial-section */
+#testimonial .testimonial-section {
+    display: none;
+}
+
+/* For each testimonial box */
+#testimonial .testimonial-section .testimonial-box {
+    display: none;
+}
+
+/* Inside each testimonial box, we target every element */
+#testimonial .testimonial-section .testimonial-box .testimonial-image {
+    display: none;
+}
+
+#testimonial .testimonial-section .testimonial-box .testimonial-name {
+    display: none;
+}
+
+#testimonial .testimonial-section .testimonial-box .testimonial-text {
+    display: none;
+}
+
+#testimonial .testimonial-section .testimonial-box .testimonial-rating {
+    display: none;
+}
+/* Hide the entire Contact Section */
+#contact {
+    display: none;
+}
+
+/* Target the top-level content inside the Contact section */
+#contact > div {
+    display: none;
+}
+
+/* Hide the Contact Heading */
+#contact-heading {
+    display: none;
+}
+
+/* Hide the Contact Content Box */
+#contact .contact-content {
+    display: none;
+}
+
+/* Hide the Left Content Section */
+#contact .contact-info-box {
+    display: none;
+}
+
+/* Specific elements inside the Left Content */
+#contact #contact-info-box h3 {
+    display: none;
+}
+
+#contact #contact-info-box p {
+    display: none;
+}
+
+/* Hide the Right Form Box */
+#contact .contact-form-box {
+    display: none;
+}
+
+/* Hide the entire form */
+#contact #contact-form {
+    display: none;
+}
+
+/* Hide each input group (including the icons) */
+#contact .input-group {
+    display: none;
+}
+
+/* Hide each individual input field */
+#contact #contact-name {
+    display: none;
+}
+
+#contact #contact-phone {
+    display: none;
+}
+
+#contact #contact-email {
+    display: none;
+}
+
+#contact #contact-message {
+    display: none;
+}
+
+/* Hide the submit button */
+#contact #contact-submit {
+    display: none;
+}
+
+/* Hide the Footer Section */
+#footer-bar {
+    display: none;
+}
+
+/* Hide the Footer Left Section */
+#footer-bar .footer-left {
+    display: none;
+}
+
+/* Hide the Footer Right Section */
+#footer-bar .footer-right {
+    display: none;
+}
+
+/* Hide the link in the Footer Right */
+#footer-bar .footer-right a {
+    display: none;
+}
+
+#abt-sec{
+    display: none;
+}
+.section{
+    display: none;
+}
+#contact{
+    display: none;
 }
 
 
@@ -1038,23 +2240,246 @@ display: none;
 
 
 
+ /* General Styles */
+body {
+  font-family: 'Quicksand';
+  margin: 0;
+  padding: 0;
+  background-color: var(--navy);
+}
+
+ :root {;
+            --navy: #08032C;
+            --sky-blue: #6CD4FF;
+            --blue: #2AC6D1;
+            --white: #F4F1E6;
+            --green: #98fb98;
+            --cream: #CFA89E;
+        }
 
 
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 50px;
+  background-color: transparent;
+  color: blue;
+  position: relative;
+  border-radius: 40px;
+  margin: 8px;
+  border: 3px solid var(--sky-blue) ;
+}
+
+.navbar-mobile .logo-mobile img {
+width: 90px;
+padding: 0;
+margin: 0;
+margin-left: -18px;
+}
+
+.navbar-mobile .nav-links-mobile {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar-mobile .nav-links-mobile li {
+  display: inline-block;
+}
+
+.navbar-mobile .nav-links-mobile li a {
+  color: var(--sky-blue);
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-mobile .nav-links-mobile li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Menu */
+.mobile-menu-mobile {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 0;
+  width: 250px;
+  height: 90%;
+  border: 3px solid var(--sky-blue);
+/*  background-color: rgba(0, 0, 0, 0.8);*/
+background-color: var(--navy);
+  color: white;
+  z-index: 1001;
+  padding: 50px 20px 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  margin-top: -3px;
+  border-radius: 20px;
+}
+
+.mobile-menu-mobile.open {
+  transform: translateX(-3%);
+}
+
+.mobile-menu-mobile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu-mobile ul li {
+  margin: 20px 0;
+}
+
+.mobile-menu-mobile ul li a {
+  color: var(--sky-blue);
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  padding: 10px;
+}
 
 
 
+.mobile-menu-mobile .close-btn-mobile {
+  background: none;
+  border: none;
+  color: var(--sky-blue);
+  font-size: 35px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  font-weight: bold;
+  right: 20px;
+}
+
+.hamburger-mobile {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-mobile i {
+  font-size: 30px;
+  color: var(--sky-blue);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar-mobile .nav-links-mobile {
+    display: none;
+  }
+#contact{
+    display: none;
+}
+  .hamburger-mobile {
+    display: block;
+  }
+
+  .mobile-menu-mobile {
+    display: block;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
 
 
+section{
+  height: 100vh;
+}
 
+#home-mobile h2{
+  margin: 0;
+  text-align: center;
+  color: var(--sky-blue);
+font-family: "Dancing Script", cursive; 
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+#home-mobile .hiimg{
+  display: block;
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
+}
+#home-mobile img{
+ padding-right: 30px;
+  width: 70%;
+  margin: 0;
+}
+#home-mobile h1{
+  padding-top: 0px;
+  color: yellow;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  padding-left: 20px;
+}
+.close-btn-mobile{
+    display: block;
+}
+.fas.fa-arrow-down {
+  font-size: 35px;  /* Size of the icon */
+  bottom: 20px;
+position: absolute;
+      animation: bounce 1.5s ease-in-out infinite; 
+  color: var(--sky-blue);   /* Color of the icon */
+}
+  .iconone{
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  display: flex;
+ }
 
+ @keyframes bounce {
+      0%, 100% {
+        transform: translateX(-50%) translateY(0); /* Start and end at normal position */
+      }
+      50% {
+        transform: translateX(-50%) translateY(-20px); /* Move up by 15px */
+      }
+    }
+#home-mobile h3{
+  color: var(--white);
+/*  padding-left: 20px ;*/
+margin: auto;
+padding-top:10px;
+/*  padding-right: 50px;*/
+  text-align: center;
+  width: 80%;
+  font-size: 17px;
+}
+#home-mobile{
+/*    padding-top: 70px;*/
+}
 
+#contact{
+    height: 80vh; width: 100%; display: flex; align-items: center; justify-content: center;
+}
 
-
-
-
-
-
+/*=======================================================================================================================*/
 
 
     </style>
@@ -1065,7 +2490,7 @@ display: none;
 <!-- ======================================== Top Bar ============================================== -->
     <div class="top-bar">
         <div class="logo-container">
-            <img src="Logo.png" alt="The English Nest">
+            <img src="https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/logo.png" alt="The English Nest">
             <!-- <h1>English Nest</h1> -->
         </div>
         <div class="nav-links">
@@ -1082,12 +2507,12 @@ display: none;
         
         <div class="text-container">
             <h2>The English Nest</h2>
-            <h1>Nest Your Fu🌳ure with 🪹s</h1>
-            <p>Embark on a journey where knowledge meets passion and success becomes inevitable! ⭐</p>
-<button class="cta-button" onclick="scrollToContact()">Start Now! ✨</button>
+            <h1>Nest Your Fu&#127795;ure with us</h1>
+            <p>Embark on a journey where knowledge meets passion and success becomes inevitable! &#11088;</p>
+<button class="cta-button" onclick="scrollToContact()">Start Now! &#10024;</button>
         </div>
         <div class="image-container">
-            <img src="/home/mrtrojanpk/Documents/Website/teacher.png" alt="Teacher" class="home-image">
+            <img src="https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/teacher.png" alt="Teacher" class="home-image">
         </div>
     </div>
        <!-- Scroll Indicator -->
@@ -1100,13 +2525,13 @@ display: none;
 
     <div id="about" class="section">
         <div class="first-about">
-            <h1>About  🪹s</h1>
+            <h1>About Us</h1>
         <p>Building Confidence in English, One Student at a Time</p>
         </div>
         
 <div class="about-container">
      <div class="about-image">
-        <img src="girl.png" alt="About Us Image">
+        <img src="https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/girl.png" alt="About Us Image">
     </div>
     <div class="about-text">
         <h1>Elevate Your English Skills with Maam Syyeda</h1>
@@ -1124,23 +2549,23 @@ display: none;
         <div class="abt-overlay"></div>
     </div>
 <div class="choose-h">
-        <h1>Why Choose Us?</h1>
+        <h1>Why Choose Us</h1>
 </div>
 
     <!-- Text Divs Container -->
     <div class="abt-txt-cont">
         <div class="abt-txt-box">
-            <img src="expert.png">
+            <img src="https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/expert.png">
             <h3>Experience</h3>
             <p>Learn with a teacher who truly understands English and makes every lesson clear and fun. You’re in great hands here!</p>
         </div>
         <div class="abt-txt-box">
-            <img src="care.png">
+            <img src="https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/care.png">
             <h3>Care</h3>
             <p>Receive one-on-one attention every step of the way. We’re here to make sure you succeed comfortably and confidently.</p>
         </div>
         <div class="abt-txt-box">
-            <img src="results.png">
+            <img src="https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/results.png">
             <h3>Results</h3>
             <p>Achieve your goals faster with lessons designed just for you. Real progress, real skills, real confidence!</p>
         </div>
@@ -1171,7 +2596,9 @@ display: none;
   <li>Speaking</li>
 </ul>
 <h4>Difficulty level : High</h4>
-      <div class="icon"><i class="fas fa-multiply" onclick="hidePopup()"></i></div>
+<button onclick="hidePopup()"><i class="fas fa-multiply" onclick="hidePopup()"></i></button>
+      <!-- <div class="icon"><i class="fas fa-multiply" onclick="hidePopup()"></i></div> -->
+
     </div>
   </div>
 
@@ -1184,7 +2611,9 @@ display: none;
       <h1>PTE</h1>
       <p>PTE  is all about getting you ready to thrive in English-speaking environments, whether you’re planning to study, work, or settle down abroad. This test checks how well you can read, write, listen, and speak English, and it's known for its fast, unbiased scoring thanks to AI. If you’re in a rush and need results quickly, PTE has your back, especially for countries like Australia, New Zealand, and Canada.</p>
 <h4>Difficulty level: Moderate to High</h4>
-      <div class="icon"><i class="fas fa-multiply" onclick="hidePopuptwo()"></i></div>
+<button onclick="hidePopuptwo()"><i class="fas fa-multiply" onclick="hidePopuptwo()"></i></button>
+
+      <!-- <div class="icon"><i class="fas fa-multiply" onclick="hidePopuptwo()"></i></div> -->
     </div>
   </div>
 
@@ -1199,7 +2628,8 @@ display: none;
      <h1>TOEFL</h1>
      <p>TOEFL is your ticket if you're dreaming of studying in the U.S. or Canada. This test dives deep into how well you handle university-level English, from understanding lectures to writing essays. With thousands of schools accepting TOEFL scores, it’s a top pick for students ready to take on the academic world. Plus, the score is valid for two years, giving you time to plan your next big step.</p>
 <h4>Difficulty level: High</h4>
-      <div class="icon"><i class="fas fa-multiply" onclick="hidePopupthree()"></i></div>
+<button onclick="hidePopupthree()"><i class="fas fa-multiply" onclick="hidePopupthree()"></i></button>
+      <!-- <div class="icon"><i class="fas fa-multiply" onclick="hidePopupthree()"></i></div> -->
   </div>
 </div>
 
@@ -1209,7 +2639,8 @@ display: none;
     <h1>Business English</h1>
       <p>Want to shine in the business world? The Business English course is designed to get you confident with everything from emails to presentations. Imagine negotiating deals or leading meetings in fluent, professional English. This course isn’t just about learning words, it’s about mastering the language of global business and showing you’re ready for international success.</p>
 <h4>Difficulty level: Moderate</h4>
-      <div class="icon"><i class="fas fa-multiply" onclick="hidePopupfour()"></i></div>
+<button onclick="hidePopupfour()"><i class="fas fa-multiply" onclick="hidePopupfour()"></i></button>
+      <!-- <div class="icon"><i class="fas fa-multiply" onclick="hidePopupfour()"></i></div> -->
   </div>
 </div>
 
@@ -1219,7 +2650,8 @@ display: none;
        <h1>Spoken English</h1>
  <p>If you're looking to break free from language barriers, this Spoken English course is where you start. It’s all about boosting your confidence in everyday conversations, from casual chats to professional talks. With plenty of practice, you’ll find yourself speaking naturally, expressing your thoughts clearly, and enjoying the ease that comes with real fluency.</p>
 <h4>Difficulty level: Easy to Moderate</h4>
-      <div class="icon"><i class="fas fa-multiply" onclick="hidePopupfive()"></i></div>
+<button onclick="hidePopupfive()"><i class="fas fa-multiply" onclick="hidePopupfive()"></i></button>
+      <!-- <div class="icon"><i class="fas fa-multiply" onclick="hidePopupfive()"></i></div> -->
   </div>
 </div>
 
@@ -1229,7 +2661,8 @@ display: none;
        <h1>Oxford English Test</h1>
        <p>Developed by the experts at Oxford, this test is a smart choice if you want to know where you stand with your English skills. It’s respected worldwide and covers all the basics: reading, listening, and grammar. No stress, just a solid evaluation of how ready you are for English-speaking environments, whether it’s for work, study, or travel.</p>
 <h4>Difficulty level: Moderate </h4>
-      <div class="icon"><i class="fas fa-multiply" onclick="hidePopupsix()"></i></div>
+<button onclick="hidePopupsix()"><i class="fas fa-multiply" onclick="hidePopupsix()"></i></button>
+      <!-- <div class="icon"><i class="fas fa-multiply" onclick="hidePopupsix()"></i></div> -->
   </div>
 </div>
 
@@ -1240,7 +2673,8 @@ display: none;
     <p>This one’s tailored for those applying for a UK spouse visa, focusing only on the basics: can you understand and respond in everyday English? It’s a practical, straightforward test designed to show you can handle the day-to-day language of life in an English-speaking country. Perfect for anyone starting fresh with their partner in the UK.
 </p>
 <h4>Difficulty level: Easy</h4>
-      <div class="icon"><i class="fas fa-multiply" onclick="hidePopupseven()"></i></div>
+<button onclick="hidePopupseven()"><i class="fas fa-multiply" onclick="hidePopupseven()"></i></button>
+      <!-- <div class="icon"><i class="fas fa-multiply" onclick="hidePopupseven()"></i></div> -->
   </div>
 </div>
 
@@ -1278,45 +2712,147 @@ display: none;
     <div class="box" id="box1">
                 <div class="icon"><i class="fas fa-graduation-cap"></i></div>
                 <h3>IELTS</h3>
-                <p>Comprehensive IELTS preparation to help you achieve your target band score.</p>
+                <!-- <p>Comprehensive IELTS preparation to help you achieve your target band score.</p> -->
     <a class="cta-button" id="btnone" onclick="showPopup()">Learn More</a>
     </div>  
     <div class="box" id="box2">
         <div class="icon"><i class="fas fa-globe"></i></div>
         <h3>PTE</h3>
-        <p>Personalized training for PTE to improve your performance on all test sections.</p>
+        <!-- <p>Personalized training for PTE to improve your performance on all test sections.</p> -->
         <a class="cta-button" id="btntwo" onclick="showPopuptwo()">Learn More</a>
     </div>  
     <div class="box" id="box3">
         <div class="icon"><i class="fas fa-book"></i></div>
         <h3>TOEFL</h3>
-        <p>Expert guidance for TOEFL to help you excel in listening, reading, writing, and speaking.</p>
+        <!-- <p>Expert guidance for TOEFL to help you excel in listening, reading, writing, and speaking.</p> -->
         <a class="cta-button" id="btnthree" onclick="showPopupthree()">Learn More</a>
     </div>  
     <div class="box" id="box4">
          <div class="icon"><i class="fas fa-briefcase"></i></div>
         <h3>Business English</h3>
-        <p>Master the English skills  for professional communication and business success.</p>
+        <!-- <p>Master the English skills  for professional communication and business success.</p> -->
         <a class="cta-button" id="btnfour" onclick="showPopupfour()">Learn More</a>
     </div>  
     <div class="box" id="box5">
            <div class="icon"><i class="fas fa-comments"></i></div>
         <h3>Spoken English</h3>
-        <p>Build confidence in spoken English with practical and immersive language sessions.</p>
+        <!-- <p>Build confidence in spoken English with practical and immersive language sessions.</p> -->
         <a class="cta-button" id="btnfive" onclick="showPopupfive()">Learn More</a>
     </div>  
     <div class="box" id="box6">
                 <div class="icon"><i class="fas fa-university"></i></div>
         <h3>Oxford English Test</h3>
-        <p>Achieve a globally recognized qualification with our Oxford English Test preparation.</p>
+        <!-- <p>Achieve a globally recognized qualification with our Oxford English Test preparation.</p> -->
         <a class="cta-button" id="btnsix" onclick="showPopupsix()">Learn More</a>
     </div>  
     <div class="box" id="box7">
         <div class="icon"><i class="fas fa-heart"></i></div>
         <h3>Life Skills for Spouse Visa</h3>
-        <p>Specialized training for the Life Skills A1 test, essential for spouse visa applications.</p>
+        <!-- <p>Specialized training for the Life Skills A1 test, essential for spouse visa applications.</p> -->
         <a class="cta-button" id="btnseven" onclick="showPopupseven()">Learn More</a>
     </div>  
+</div>
+    </div>
+    
+
+<!-- ============================== Testimonials ========================== -->
+
+
+
+   <section class="section" id="testimonial">
+    <div class="testimonial-heading"> <h1>Real Words, Real Impact</h1> </div>
+
+
+<div class="testimonial-section">
+    <div class="testimonial-box">
+        <div class="testimonial-image" style="background-image: url('https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/Jibranzada.png');"></div>
+        <h4 class="testimonial-name">Jibran Zada</h4>
+        <p class="testimonial-text">Maam syyeda here genuinely care about your growth, my confidence in spoken English has shot really up!</p>
+        <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+    </div>
+    <div class="testimonial-box">
+        <div class="testimonial-image" style="background-image: url('https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/Muneeb.png');"></div>
+        <h4 class="testimonial-name">Muneeb</h4>
+        <p class="testimonial-text">Loved the friendly atmosphere and personalized approach, made learning IELTS feel easy and enjoyable!</p>
+        <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+    </div>
+    <div class="testimonial-box">
+        <div class="testimonial-image" style="background-image: url('https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/man.png');"></div>
+        <h4 class="testimonial-name">Sam Wilson</h4>
+        <p class="testimonial-text">Thanks to their structured PTE classes and supportive staff, I felt completely prepared for my test!.</p>
+        <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    </div>
+</div>
+
+
+
+
+   </section>
+
+
+
+
+
+
+
+
+
+
+ <!--    <div id="contact" class="section">
+        <h1>Contact Us</h1>
+    </div> -->
+
+
+
+
+
+
+<!-- Contact Section -->
+<section class="section" id="contact" >
+  <div style="width: 90%;  display: flex; flex-direction: column; align-items: center; gap: 50px;">
+    <!-- Top Heading -->
+    <h2 id="contact-heading" style="text-align: center; font-size: 50px; font-weight: bold; color: yellow; margin-top:0;  ">Contact Us</h2>
+
+    <div class="contact-content" style="display: flex; width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+      <!-- Left Content -->
+      <div class="contact-info-box" id="contact-info-box" style="flex: 1; min-width: 250px; max-width: 45%;">
+        <h3 id="book-call-heading" style="font-size: 40px; color: var(--sky-blue); margin-top: 0;">Book a 1:1 Call</h3>
+        <p id="book-call-subheading" style="font-size: 20px; color: var(--sky-blue); font-weight: bold;">Ready to take the next step? <br>Let’s connect and bring your vision to life. <br> Book a 1:1 call with us to discuss your ideas.</p>
+      </div>
+
+      <!-- Right Form -->
+      <div class="contact-form-box" id="contact-form-box" style="flex: 1; min-width: 250px; max-width: 45%; align-items: center;">
+        <form id="contact-form" style="display: flex; flex-direction: column; gap: 25px; align-items: center;">
+          <div class="input-group">
+            <span class="input-icon"><i class="fas fa-user"></i></span>
+            <input type="text" id="contact-name" class="contact-input" placeholder="Name" required>
+          </div>
+          <div class="input-group">
+            <span class="input-icon"><i class="fas fa-phone-alt"></i></span>
+            <input type="text" id="contact-phone" class="contact-input" placeholder="Phone No" required>
+          </div>
+          <div class="input-group">
+            <span class="input-icon"><i class="fas fa-envelope"></i></span>
+            <input type="email" id="contact-email" class="contact-input" placeholder="Email" required>
+          </div>
+          <div class="input-group">
+            <span class="input-icon"><i class="fas fa-comment"></i></span>
+            <input id="contact-message" class="contact-input" placeholder="Message" required>
+          </div>
+          <button type="button" id="contact-submit" style="padding: 12px; border: none; background-color: var(--blue); color: var(--navy); font-size: 19px; border-radius: 25px; cursor: pointer; font-weight:bold;   width: 40%; " onclick="submitToWhatsApp()">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-bar">
+  <h1 class="footer-left">
+    <i class="fas fa-check-circle"></i> The English Nest
+  </h1>
+  <h1 class="footer-right">
+    <a href="https://www.jibranzada.com">Designed by Jibran</a>
+  </h1>
 </div>
 
 
@@ -1324,12 +2860,85 @@ display: none;
 
 
 
+
+
+<!-- ===================================================================================================================== -->
+
+
+ <header>
+    <nav class="navbar-mobile">
+      <!-- Logo -->
+      <div class="logo-mobile">
+        <img src="https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/logo.png" alt="Logo">
+      </div>
+
+      <!-- Horizontal Navigation Bar for Large Screens -->
+      <ul class="nav-links-mobile" id="nav-links-mobile">
+        <li><a href="#home-mobile"><i class="fas fa-mobile"></i> Home</a></li>
+        <li><a href="#about-mobile"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#services-mobile"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#portfolio-mobile"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="#contact-mobile"><i class="fas fa-phone"></i> Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Icon for Small Screens -->
+      <div class="hamburger-mobile" id="hamburger-mobile">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu-mobile" id="mobile-menu-mobile">
+      <button id="close-btn-mobile" class="close-btn-mobile"><i class="fas fa-times"></i></button>
+      <ul>
+        <li><a href="#home-mobile"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about-mobile"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#services-mobile"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#portfolio-mobile"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="#contact-mobile"><i class="fas fa-phone"></i> Contact</a></li>
+      </ul>
     </div>
-    
-    <div id="contact" class="section">
-        <h1>Contact Us</h1>
-        <p>Details on how to contact us go here.</p>
-    </div>
+  </header>
+
+    <section id="home-mobile">
+      <h2>The English Nest</h2>
+</div>
+<h1>Nest Your Fu&#127795;ure <br> with us</h1>
+<h3>Embark on a journey where knowledge meets passion and success becomes inevitable! &#11088;</h3>
+      <div class="hiimg"><img src="https://raw.githubusercontent.com/mrtrojanpk/TheEnglishNest/refs/heads/main/Front.png">
+<div class="iconone"><i class="fas fa-arrow-down"></i></div>
+    </section>
+
+
+
+
+
+    <section id="about-mobile">About Content</section>
+    <section id="services-mobile">Services Content</section>
+    <section id="portfolio-mobile">Portfolio Content</section>
+    <section id="contact-mobile">Contact Content</section>
+
+
+
+
+<style type="text/css">
+    @media (max-width: 768px) {
+        #contact{
+            display: none;
+        }
+}
+</style>
+<!-- ====================================================================================================================== -->
+
+
+
+
+
+
+
+
+
+
 
     <script>
         window.addEventListener('scroll', function() {
@@ -1408,6 +3017,7 @@ function scrollToContact() {
     // Set the popup style to remain clear
     popup.style.position = 'absolute'; // Ensure it is above the blurred section
     popup.style.zIndex = '10'; // Ensure it is on top
+    servicesSection.scrollIntoView({ behavior: 'smooth' });
 
 
             // Disable page scrolling
@@ -1448,6 +3058,7 @@ function scrollToContact() {
     // Set the popup style to remain clear
     popup.style.position = 'absolute'; // Ensure it is above the blurred section
     popup.style.zIndex = '10'; // Ensure it is on top
+    servicesSection.scrollIntoView({ behavior: 'smooth' });
 
 
             // Disable page scrolling
@@ -1491,6 +3102,7 @@ function scrollToContact() {
     // Set the popup style to remain clear
     popup.style.position = 'absolute'; // Ensure it is above the blurred section
     popup.style.zIndex = '10'; // Ensure it is on top
+    servicesSection.scrollIntoView({ behavior: 'smooth' });
 
 
             // Disable page scrolling
@@ -1536,6 +3148,7 @@ function scrollToContact() {
     // Set the popup style to remain clear
     popup.style.position = 'absolute'; // Ensure it is above the blurred section
     popup.style.zIndex = '10'; // Ensure it is on top
+    servicesSection.scrollIntoView({ behavior: 'smooth' });
 
 
             // Disable page scrolling
@@ -1580,6 +3193,7 @@ function scrollToContact() {
     // Set the popup style to remain clear
     popup.style.position = 'absolute'; // Ensure it is above the blurred section
     popup.style.zIndex = '10'; // Ensure it is on top
+    servicesSection.scrollIntoView({ behavior: 'smooth' });
 
 
             // Disable page scrolling
@@ -1629,6 +3243,7 @@ function scrollToContact() {
     popup.style.position = 'absolute'; // Ensure it is above the blurred section
     popup.style.zIndex = '10'; // Ensure it is on top
 
+    servicesSection.scrollIntoView({ behavior: 'smooth' });
 
             // Disable page scrolling
             document.body.style.overflow = 'hidden';
@@ -1676,6 +3291,7 @@ function scrollToContact() {
     popup.style.position = 'absolute'; // Ensure it is above the blurred section
     popup.style.zIndex = '10'; // Ensure it is on top
 
+    servicesSection.scrollIntoView({ behavior: 'smooth' });
 
             // Disable page scrolling
             document.body.style.overflow = 'hidden';
@@ -1703,7 +3319,29 @@ function scrollToContact() {
 
 
 
+// ==================== Whatsapp Contact Form =========================== ///
+          function submitToWhatsApp() {
+    // Fetch input values
+    const name = document.getElementById('contact-name').value.trim();
+    const phone = document.getElementById('contact-phone').value.trim();
+    const email = document.getElementById('contact-email').value.trim();
+    const message = document.getElementById('contact-message').value.trim();
 
+    // Check if all fields are filled
+    if (!name || !phone || !email || !message) {
+      alert("Please fill all fields before submitting.");
+      return;
+    }
+
+    // Format WhatsApp message
+    const whatsappMessage = `Hello, I'm ${name}.%0A%0AHere's my information for booking a call:%0A- Phone: ${phone}%0A- Email: ${email}%0A- Message: ${message}`;
+
+    // WhatsApp URL with the formatted message
+    const whatsappURL = `https://wa.me/923455408366?text=${whatsappMessage}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, '_blank');
+  }
 
 
 
@@ -1711,6 +3349,56 @@ function scrollToContact() {
 
 
     </script>
+
+
+
+<script type="text/javascript">
+// Get references to HTML elements
+const hamburgerHome = document.getElementById('hamburger-mobile');
+const mobileMenuHome = document.getElementById('mobile-menu-mobile');
+const closeBtnHome = document.getElementById('close-btn-mobile');
+const navLinksHome = document.querySelectorAll('.mobile-menu-mobile a');
+
+// Toggle the mobile menu when hamburger icon is clicked
+hamburgerHome.addEventListener('click', () => {
+  mobileMenuHome.classList.add('open');
+});
+
+// Close the mobile menu when close button is clicked
+closeBtnHome.addEventListener('click', () => {
+  mobileMenuHome.classList.remove('open');
+});
+
+// Close the mobile menu when a link is clicked
+navLinksHome.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenuHome.classList.remove('open');
+  });
+});
+
+// Close the mobile menu when clicking outside of it
+document.addEventListener('click', (event) => {
+  if (
+    !mobileMenuHome.contains(event.target) && // Check if the click is outside the menu
+    !hamburgerHome.contains(event.target) && // Check if the click is not on the hamburger icon
+    mobileMenuHome.classList.contains('open') // Check if the menu is currently open
+  ) {
+    // Temporarily display none with a slight delay
+    mobileMenuHome.classList.remove('open');
+    setTimeout(() => {
+      mobileMenuHome.style.display = 'none';
+      setTimeout(() => {
+        mobileMenuHome.style.display = ''; // Reset display property after 1 second
+      }, 1000); // Ensure it remains hidden for 1 second
+    }, 0);
+  }
+});
+
+</script>
+
+
+
+
 
 </body>
 </html>
